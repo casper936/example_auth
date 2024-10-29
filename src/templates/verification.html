@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block content %}
+
+<p>Добро пожаловать в <b>pawmate.ru</b>!</p>
+<p>
+  Теперь у вас есть Личный кабинет на нашем сайте.
+  Чтобы активировать его, подтвердите ваш e-mail.
+  В дальнейшем мы будем отправлять на него важные письма и уведомления.
+  Для подтверждения вашего e-mail перейдите по ссылке ниже
+</p>
+<table
+  role="presentation"
+  border="0"
+  cellpadding="0"
+  cellspacing="0"
+  class="btn btn-primary"
+>
+  <tbody>
+    <tr>
+      <td align="left">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <a href="{{url}}" target="_blank">Подтвердить email</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h5>Если вы не регистрировались и получили это письмо случайно, проигнорируйте его.</h5>
+
+{% endblock %}
